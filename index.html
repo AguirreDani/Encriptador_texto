@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge Encriptador de texto</title>
+        <link rel="icon" href="imagenes/iconoPestaña.png">
+        <script src="script.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/resset.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+    </head>
+    <body>
+        <header id="header">
+            <div class="headerContainer">
+                <h1 id="headerContainer__titulo1">ENCRIPT</h1>
+                <img src="imagenes/logoAlura.png" alt="logo_alura" id="logoAlura">
+                <h1 id="headerContainer__titulo2">DOR</h1>
+            </div>
+            <div class="video-overlay"></div>
+            <video src="video/videoFondo.mp4" muted autoplay loop ></video>
+        </header>
+        <main>
+            <section class="seccionEntrada">
+                <div class="seccionEntrada__Contenedor">
+                    <textarea class="ingresarTexto" name="mensaje" placeholder="Ingrese el texto aquí" id="textoEncriptar"></textarea>
+                    <p class="ingresarTexto__aviso"><img src="imagenes/signoAdvertencia.png" class="ingresarTexto__aviso-signo"> letras minusculas y sin acentos</p>
+                    <div class="boton">
+                        <button class="botonEncriptar" id="botonEncriptar" onclick="encriptarTexto()">ENCRIPTAR</button>
+                        <button class="botonDesencriptar" id="botonDesencriptar" onclick="desencriptarTexto()">DESENCRIPTAR</button>
+                    </div>
+                </div>
+            </section>
+            <section class="seccionResultado">
+                <div id="EsperaResultado">
+                    <img class="EsperaResultado__imagen" src="imagenes/Muñeco.png" alt="muñeco">
+                    <p class="EsperaResultado__aviso" >Ningún mensaje fue encontrado</p>
+                    <h3 class="EsperaResultado__subtitulo">Ingresa el texto que desees encriptar o desencriptar.</h3>
+                </div>
+                <div id="mostrarResultado">
+                    <p class="mostrarResultado__Texto" id="resultado"></p>
+                    <div class="mostrarResultado__boton">
+                        <button class="botonCopiar" id="copiar" onclick="copiarTexto()">COPIAR</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footerInformacion">
+                <h1>Creado por Daniela Aguirre | Challenge encriptador | AluraLatam/Oracle </h1>
+            </div>
+            <div class="footerRedes">
+                <a href="https://github.com/AguirreDani"><img src="imagenes/git.png" alt="github" class="logoGithub"></a>
+                <a href="https://www.linkedin.com/in/daniela-aguirre-ing"><img src="imagenes/linkedin.png" alt="instagram" class="logoLinkedin"></a>
+            </div>
+        </footer>
+    </body>
+
+</html>
